@@ -1,0 +1,45 @@
+.menu {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.nav__ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.nav__item {
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+.nav__link:after {
+  content: "";
+  width: 100%;
+  display: block;
+  border-bottom: 4px solid burlywood;
+  transition: 200ms;
+  transform: scale(0);
+  transform-origin: left;
+}
+
+.nav__link:hover:after {
+  transform: scale(1);
+}
+
+.selected:after {
+  color: darkorange;
+}
+
+.selected:after {
+  pointer-events: none;
+  border-bottom: 4px solid darkorange;
+  transform: scale(1);
+}

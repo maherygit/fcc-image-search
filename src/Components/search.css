@@ -1,0 +1,36 @@
+#search__container {
+  display: flex;
+  justify-content: center;
+}
+
+form[name="search__form"] {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 2px solid burlywood;
+  font-size: 2rem;
+  flex: 1 0 0;
+  background: none;
+}
+
+.input__label {
+  color: lightgray;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  font-size: 2rem;
+  z-index: -1;
+}
+
+.search__input:focus + .input__label,
+.search__input:active + .input__label,
+.search__input:not(:placeholder-shown) + .input__label {
+  color: lightgray;
+  transform: translateY(-100%);
+  font-size: 1.3rem;
+  transition: transform 300ms ease-in-out;
+}

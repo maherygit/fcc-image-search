@@ -1,0 +1,39 @@
+#history__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+ul.history__list {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+li.history__item {
+  width: 100%;
+  padding: 5px;
+  margin: 1px;
+  background-color: burlywood;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#history__title {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: burlywood;
+  margin-right: 10px;
+}
+
+#history__clear {
+  display: inline-block;
+  padding: 2px;
+}

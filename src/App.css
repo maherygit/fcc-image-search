@@ -1,0 +1,10 @@
+.btn {
+  color: white;
+  border: none;
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(221, 155, 68);
+}

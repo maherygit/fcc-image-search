@@ -1,0 +1,55 @@
+#imageList__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: stretch;
+  grid-gap: 5px 5px;
+  margin-top: 20px;
+}
+
+.image__figure {
+  display: block;
+  position: relative;
+  /*background-color: burlywood;*/
+  margin: 0;
+  padding: 5px;
+  height: 300px;
+  max-width: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image__link {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /*background-color: aliceblue;*/
+  text-align: center;
+}
+
+.image__thumbnail {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+.image__description {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: all 100ms ease-in;
+  height: 100%;
+  width: 100%;
+}
+
+.image__link:hover .image__description {
+  position: absolute;
+  top: 0;
+  transition: all 100ms ease-in;
+}

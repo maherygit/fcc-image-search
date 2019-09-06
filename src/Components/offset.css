@@ -1,0 +1,36 @@
+#offset__container {
+  width: 100vw;
+  height: 2rem;
+  margin: 30px auto 20px auto;
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+
+form[name="offset__form"] {
+  height: 100%;
+}
+
+.offset__input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 3rem;
+  -moz-appearance: textfield;
+}
+
+/* Chrome */
+.offset__input::-webkit-inner-spin-button,
+.offset__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Opéra*/
+.offset__input::-o-inner-spin-button,
+.offset__input::-o-outer-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+
+#offset__container .btn {
+  height: 100%;
+}
